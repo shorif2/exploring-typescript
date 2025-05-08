@@ -48,7 +48,7 @@ type Animal = {
   name: string;
 };
 
-// ❌ Error: Duplicate identifier
+// Error: Duplicate identifier
 // type Animal = {
 //   age: number;
 // };
@@ -117,8 +117,8 @@ function showStatus(status: Status) {
   console.log(`Current status: ${status}`);
 }
 
-showStatus("success"); // ✅ Valid
-showStatus("idle"); // ❌ Error: 'idle' is not assignable to type 'Status'
+showStatus("success"); //  Valid
+showStatus("idle"); //  Error: 'idle' is not assignable to type 'Status'
 ```
 
 Here, the Status type can be one of three string literals. This pattern is perfect for enums, error handling states, or flags.
